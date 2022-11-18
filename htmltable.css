@@ -1,0 +1,22 @@
+.a,td{
+    
+    border: black solid 2px;
+}
+.a::before{
+    content:"Number";
+}
+.b,td{
+    border-collapse: collapse;
+    border: red solid 2px;
+}
+
+.c {
+    border-collapse: collapse;
+    border: black solid 1px;
+  /* background-color: blue; */
+}
+.d{
+    border-collapse: collapse;
+    border: black solid 2px;
+}
+
