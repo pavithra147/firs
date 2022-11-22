@@ -1,0 +1,19 @@
+/* h1{
+    text-align:center;
+    
+    color: blueviolet;
+}
+.align{
+    color:orange;
+    font-size: large;
+}
+ */
+ li{
+    list-style-type:decimal;
+ }
+
+ li li{
+   list-style-type:disc;
+ } 
+
+

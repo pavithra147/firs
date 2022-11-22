@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example for css</title>
+    <link href="sample.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>CSS</h1>
+    <p class="align">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+    <br>
+    <h1> Descendent Combinator</h1>
+    <!-- In this example initially all the list will get decimal value according to the condition given in the css that li{list-style-type}
+and after second condition that is li li{
+    list-style-type} in that the li element which parent both are li li that style is changed to "disc" and remaining whose parent child element are not li li that is changed to "decimal"
+   -->
+
+    <ul>
+        <li>item 1
+            <ul><li>wood</li></ul>
+        </li>
+        <li>item 2
+            <ul><li>water</li>
+                <li>food</li>
+            </ul>
+        </li>
+    </ul>
+
+   
+   
+</body>
+</html>

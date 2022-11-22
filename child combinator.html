@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        /* ul > li{
+            color: blue;
+        } */
+
+        p ~ div{
+            background-color:pink;
+        }
+
+        li:first-of-type + li {
+  color: red;
+}
+    </style>
+</head>
+<body>
+    <h1> Child Combinator</h1>
+    <!--this combinator uses > symbol in this example ul > li is given this means in the html parent and child element wants to be ul and li then only color will change-->
+    <ul>
+        <li>item 1
+            <ul><li>wood</li></ul>
+        </li>
+        <li>item 2
+            <ul><li>water</li>
+                <li>food</li>
+            </ul>
+        </li>
+    </ul>  
+    <br>
+    <h2>General Sibling Combinator</h2> 
+    <div>
+        <p>combinator</p>
+    </div> 
+    <p>
+        numbers
+        <div>
+            <p>one</p>
+        </div>
+    </p>
+    <br>
+    <h1>Adjacent sibling combinator</h1>
+    <ul>
+        <li>One</li>
+        <li>Two!</li>
+        <li>Three</li>
+      </ul>
+
+</body>
+</html>

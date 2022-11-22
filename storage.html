@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>storage</title>
 </head>
 <body>
+   <p id="session"> </p>
     <button onclick="local()">Local</button>
     <button onclick="session()">session</button>
-    <button onclick="deletelocal()">del</button>
-    <button onclick="deletesession()">Delses</button>
+    <button onclick="getsession()">Getsession</button>
+    <button onclick="deletelocal()">delete from local</button>
+    <button onclick="deletesession()">Delete from session</button>
     <script>
+        var session=document.getElementById('session');
+        
     function local(){
 
         localStorage.setItem("name","pavithra");
@@ -19,6 +23,10 @@
     function session(){
 
         sessionStorage.setItem("name","pavithra");
+}
+function getsession(){
+
+session.innerHTML=sessionStorage.getItem("name");
 }
 function deletelocal(){
     localStorage.clear();

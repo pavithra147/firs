@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        .box{
+            border: 2px solid violet;
+            background-color:grey;
+            color: white;
+            margin: 50px;
+            padding: 30px;
+            width:100px;
+            height:150px;
+
+        }
+        .alternate{
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Using Standard box model
+    </div>
+    <div class=" box alternate">
+        Using alternate box model
+    </div>
+</body>
+</html>
