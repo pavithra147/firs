@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclass</title>
+    <style>
+        button{
+            background-image: linear-gradient(90deg, #f34079 20%,#fc894d);
+            width:10em;
+            height:2em;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor: pointer;
+
+        }
+        button:active{
+            box-shadow:1px 5px 6px green;
+        }
+        button:hover{
+           background: darkorchid;
+        }
+        a:visited{
+            color:darkkhaki;
+        }
+        #new{
+            display: none;
+            width:200px;
+            height: 100px;
+            position: absolute;
+            left:170px;
+            border:2px solid black;
+            padding: 20px;
+        }
+        #sample:hover+ #new{
+            display:block;
+
+        }
+        h1{
+            color:saddlebrown;
+            font-family:'Courier New', Courier, monospace;
+
+        }
+        ul{
+           
+            width: 150px;
+            
+        }
+        li{
+            border:2px solid black;
+            list-style: none;
+        }
+        li:nth-child(-n+2){
+            background-color: aqua;
+        }
+        li:nth-child(even)
+        {
+            background-color: antiquewhite;
+        }
+        li:nth-child(odd){
+            background-color: rgb(255, 154, 30);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Button</h1>
+    <button  >Click the Button</button>
+    <a id="sample" href="//www.google.com" >google</a>
+    <div id="new">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus similique nesciunt reprehenderit quasi fuga odio.
+    </div>
+    <br><br><br>
+    <h1>Car Brands</h1>
+    <ul>
+        <li>Aadi</li>
+        <li>Benz</li>
+        <li>Hyundai</li>
+        <li>Ford</li>
+        <li>Suzuki</li>
+    </ul>
+</body>
+</html>

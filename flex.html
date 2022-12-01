@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        header{
+            
+            background-color: darkviolet;
+           height: 50px;
+
+        }
+        h1{
+            text-align: center;
+            color:white;
+
+        }
+        
+        article{
+            background-color: aqua;
+            margin: 10px;
+            padding:10px;
+            flex:200px;
+
+             
+             
+        }
+        
+        section{
+            display: flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            flex-flow:row wrap;
+           
+         }
+        article:nth-of-type(3){
+            flex:2 200px;
+        } 
+        div{
+            display:flex;
+            align-items: center;
+            justify-content:space-around; 
+           
+        }
+        button:first-child{
+            align-self:flex-end;
+        }
+        button:last-child{
+            order: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <header><h1>Welcome</h1></header>
+    <section>
+        <article>
+            <h2>First</h2>
+            This article is about flex
+        </article>
+        <article>
+            <h2>Second</h2>
+            It is inside article element
+        </article>
+        <article>
+            <h2>Third</h2>
+            It is inside article element
+        </article>
+        <article>
+            <h2>Fourth</h2>
+            It is inside article element
+        </article><article><h2>Fifth</h2>
+        It is inside article element
+    </article>
+    <article>
+        <h2>Sixth</h2>
+        It is inside article element
+    </article>
+            
+    </section>
+    <br>
+
+    <h1>Horizontal Alignment and Vertical Alignment </h1>
+    <div>
+        <button>smile</button>
+        <button>Laugh</button>
+        <button>Wink</button>
+        <button>Shrug</button>
+        <button>Blush</button>
+    </div>
+</body>
+</html>

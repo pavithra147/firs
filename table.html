@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+      .color{
+        border:2px solid black;
+        width: fit-content;
+       background-color: cornsilk;
+       position: relative;
+      
+      
+      }  
+    table,th,td{
+        border-collapse: collapse;
+        border:2px solid blue;
+        padding: 5px;
+        text-align: center;
+        margin:10px;
+        
+    }
+    table{
+        
+    }
+    tbody tr:nth-child(odd){
+        background-color: pink;
+    }
+    tbody tr:nth-child(even){
+        background-color: blueviolet;
+    }
+    thead th:nth-child(even){
+        background-color: chocolate;
+    }
+    thead th:nth-child(odd){
+        background-color: chocolate;
+    }
+    caption{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style:italic;
+        caption-side:bottom;
+        text-align:right;
+
+
+
+    }
+    </style>
+</head>
+<body>
+    <div class="color">
+    <table>
+        <caption>Ticket available</caption>
+        <colgroup>
+            
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Transport type</th>
+                <th scope="col"> no.of.tickets available</th>
+                <th scope="col">no.of.tickets booked</th>
+                <th scope="col">no.of.tickets notbooked</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Bus</th>
+                <td>50</td>
+                <td>20</td>
+                <td>30</td>
+            
+
+            </tr>
+            <tr>
+                <th scope="row">Train</th>
+                <td>100</td>
+                <td>70</td>
+                <td>30</td>
+                
+            </tr>
+           <tr>
+            <th scope="row">Aeroplane</th>
+            <td>1500</td>
+            <td>500</td>
+            <td>1000</td>
+           </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
